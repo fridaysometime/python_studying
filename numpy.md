@@ -22,7 +22,7 @@
   * object
   * string_
   * unicode_
- 
+
 4. 大小相等的数组之间的任何算是运算都会将运算应用到元素级
 5. 不同大小的数组之间的运算叫广播
 6. 基本的索引和切片
@@ -86,3 +86,35 @@
     * setxor1d(x,y)
 12. 将数组以二进制格式保存到磁盘
   * np.save和np.load是读写磁盘数组数据的两个函数。数组是以未压缩的原始二进制格式保存在.npy的文件中。
+13. 线性代数
+  * .dot()
+  * 常用的numpy.linalg函数
+    * diag()
+    * dot()
+    * trace()
+    * det()
+    * eig()
+    * inv()
+    * pinv()
+    * qr()
+    * svd()
+    * solve()
+    * lstsq()
+14. 随机数的生成
+  * python的内置模块一次只能生成一个样本值，而numpy.random可以生成大量样本值
+  * np.random.normal()
+  * 常用的numpy.random函数
+    * seed()
+    * permutation()，返回一个序列的随机排列或返回一个随机排列的范围
+    * shuffle(),对一个序列就地随机排列
+    * randn()，产生正太分布的样本值
+    * randint()，从给定上下线范围内的随机选取整数
+    * rand(),产生均匀分布的样本值
+    * binomial(), 产生二项分布的样本值
+    * normal，产生正态分布的样本值
+    * beta(),
+    * chisquare(),产生卡方分布的样本值
+    * gamma(),
+    * uniform(),产生0,1均匀分布样本值
+15. 模拟随机漫步
+  * numpy.random函数传入一个二元元祖就可以产生一个二维数组
